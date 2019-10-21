@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wallapap</title>
+    </head>
+    <body>
+        <h1>{{ sitioWeb }}</h1>
+        <h2>{{ usuario }}</h2>
+        <p> Ejemplo de plantilla </p>
+        <ul>
+            {{#each anuncios}}
+            <li>
+                {{ titulo }} - {{ precio }}
+            </li>
+            {{/each}}
+        </ul>
+    </body>
+</html>
