@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="735c62ae-a29c-420e-91c3-0abb04b0418f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,7 +79,8 @@
       <workItem from="1571841800255" duration="576000" />
       <workItem from="1572714389455" duration="1539000" />
       <workItem from="1572720373468" duration="6415000" />
-      <workItem from="1572728695786" duration="3312000" />
+      <workItem from="1572728695786" duration="3824000" />
+      <workItem from="1572738622000" duration="197000" />
     </task>
     <task id="LOCAL-00001" summary="Clase 2.">
       <created>1571836903896</created>
@@ -192,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572731925030</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Trying again...">
+      <created>1572732075948</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1572732075948</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +237,8 @@
     <MESSAGE value="Change binary." />
     <MESSAGE value="Solving problem in call." />
     <MESSAGE value="Change the port." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change the port." />
+    <MESSAGE value="Trying again..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying again..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -236,7 +246,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes.js</url>
           <line>49</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
