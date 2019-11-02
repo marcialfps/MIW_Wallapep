@@ -48,7 +48,7 @@ module.exports = {
                     //extension = req.payload.foto.hapi.filename.split('.')[1];
 
                     await module.exports.utilSubirFichero(
-                        binario, idAnuncio, ".png");
+                        binario, idAnuncio, "png");
                     return respuesta;
                 }
             },
