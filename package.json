@@ -1,6 +1,9 @@
 {
   "name": "Diseño y programacion de interfaces de usuario",
   "version": "1.0.0",
+  "scripts": {
+    "start": "node main.js"
+  },
   "dependencies": {
     "@hapi/cookie": "^10.1.2",
     "@hapi/hapi": "^18.4.0",
