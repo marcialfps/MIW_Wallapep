@@ -42,13 +42,11 @@ module.exports = {
                             }
                         })
 
-                    /*
                     binario = req.payload.foto._data;
                     extension = req.payload.foto.hapi.filename.split('.')[1];
 
                     await module.exports.utilSubirFichero(
                         binario, idAnuncio, extension);
-                    */
                     return respuesta;
                 }
             },
