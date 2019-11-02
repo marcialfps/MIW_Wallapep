@@ -18,6 +18,11 @@ module.exports = {
             {
                 method: 'POST',
                 path: '/api/publicar',
+                options : {
+                    payload: {
+                        output: 'stream'
+                    }
+                },
                 handler: async (req, h) => {
                     anuncio = {
                         usuario : "api" ,
@@ -42,10 +47,10 @@ module.exports = {
                             }
                         })
 
-                    console.log(req.payload.foto);
+                    console.log(req.payload);
 
-                    binario = req.payload.foto;
-                    //extension = req.payload.foto.hapi.filename.split('.')[1];
+                    binario = req.payload.foto._data();
+                    extension = req.payload.foto.hapi.filename.split('.')[1];
 
                     await module.exports.utilSubirFichero(
                         binario, idAnuncio, "png");
