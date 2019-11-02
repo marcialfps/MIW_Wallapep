@@ -1,5 +1,5 @@
 {
-  "name": "Diseño y programacion de interfaces de usuario",
+  "name": "Wallapep",
   "version": "1.0.0",
   "scripts": {
     "start": "node main.js"

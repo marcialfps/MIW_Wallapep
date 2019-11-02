@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="735c62ae-a29c-420e-91c3-0abb04b0418f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,7 +75,7 @@
       <workItem from="1571675515777" duration="7141000" />
       <workItem from="1571830222208" duration="7134000" />
       <workItem from="1571841800255" duration="576000" />
-      <workItem from="1572714389455" duration="1105000" />
+      <workItem from="1572714389455" duration="1225000" />
     </task>
     <task id="LOCAL-00001" summary="Clase 2.">
       <created>1571836903896</created>
@@ -92,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572715234288</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Deployment in heroku.">
+      <created>1572715522543</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572715522543</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Clase 2." />
     <MESSAGE value="Added api calls." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added api calls." />
+    <MESSAGE value="Deployment in heroku." />
+    <option name="LAST_COMMIT_MESSAGE" value="Deployment in heroku." />
   </component>
 </project>
