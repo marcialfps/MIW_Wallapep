@@ -42,6 +42,8 @@ module.exports = {
                             }
                         })
 
+                    console.log(req.payload);
+
                     binario = req.payload.foto._data;
                     extension = req.payload.foto.hapi.filename.split('.')[1];
 
