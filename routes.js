@@ -330,6 +330,35 @@ module.exports = {
             },
             {
                 method: 'GET',
+                path: '/api/anuncio/{id}',
+                handler: async (req, h) => {
+                    var criterio = { "_id" : require("mongodb").ObjectID(req.params.id) };
+                    var anunciosObtenidos;
+                    await repositorio.conexion()
+                        .then((db) => repositorio.obtenerAnuncios(db, criterio))
+                        .then((anuncios) => {
+                            anunciosObtenidos = anuncios;
+                        });
+
+                    return anunciosObtenidos[0];
+                }
+            },
+            {
+                method: 'GET',
+                path: '/api/anuncios',
+                handler: async (req, h) => {
+                    var anunciosObtenidos;
+                    await repositorio.conexion()
+                        .then((db) => repositorio.obtenerAnuncios(db, {}))
+                        .then((anuncios) => {
+                            anunciosObtenidos = anuncios;
+                        })
+
+                    return anunciosObtenidos;
+                }
+            },
+            {
+                method: 'GET',
                 path: '/{param*}',
                 handler: {
                     directory: {
