@@ -47,10 +47,10 @@ module.exports = {
                             }
                         })
 
-                    console.log(req.payload);
+                    //console.log(req.payload);
 
-                    binario = req.payload.foto._data();
-                    extension = req.payload.foto.hapi.filename.split('.')[1];
+                    binario = req.payload.foto;
+                    //extension = req.payload.foto.hapi.filename.split('.')[1];
 
                     await module.exports.utilSubirFichero(
                         binario, idAnuncio, "png");
