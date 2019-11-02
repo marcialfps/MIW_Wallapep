@@ -44,7 +44,7 @@ module.exports = {
 
                     console.log(req.payload.foto);
 
-                    binario = req.payload.foto._data;
+                    binario = req.payload.foto;
                     //extension = req.payload.foto.hapi.filename.split('.')[1];
 
                     await module.exports.utilSubirFichero(

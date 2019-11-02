@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="735c62ae-a29c-420e-91c3-0abb04b0418f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,7 +79,7 @@
       <workItem from="1571841800255" duration="576000" />
       <workItem from="1572714389455" duration="1539000" />
       <workItem from="1572720373468" duration="6415000" />
-      <workItem from="1572728695786" duration="1607000" />
+      <workItem from="1572728695786" duration="2179000" />
     </task>
     <task id="LOCAL-00001" summary="Clase 2.">
       <created>1571836903896</created>
@@ -164,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572730131159</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Solving extension.">
+      <created>1572730365204</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572730365204</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +204,7 @@
     <MESSAGE value="Working..." />
     <MESSAGE value="Mostly done..." />
     <MESSAGE value="Removing extension." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing extension." />
+    <MESSAGE value="Solving extension." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solving extension." />
   </component>
 </project>
