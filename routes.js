@@ -340,7 +340,7 @@ module.exports = {
                             anunciosObtenidos = anuncios;
                         });
 
-                    return anunciosObtenidos[0];
+                    return anunciosObtenidos;
                 }
             },
             {
