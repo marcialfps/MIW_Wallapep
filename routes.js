@@ -16,6 +16,71 @@ module.exports = {
 
         server.route([
             {
+                method: 'POST',
+                path: '/api/publicar',
+                handler: async (req, h) => {
+                    anuncio = {
+                        usuario : "api" ,
+                        titulo: req.payload.titulo,
+                        descripcion: req.payload.descripcion,
+                        categoria: req.payload.categoria,
+                        precio: Number.parseFloat(req.payload.precio),
+
+                    }
+
+                    // await no continuar hasta acabar esto
+                    // Da valor a respuesta
+                    await repositorio.conexion()
+                        .then((db) => repositorio.insertarAnuncio(db, anuncio))
+                        .then((id) => {
+                            respuesta = "";
+                            if (id == null) {
+                                respuesta =  "Error al insertar"
+                            } else {
+                                respuesta = "Insertado id:  "+ id;
+                                idAnuncio = id;
+                            }
+                        })
+
+                    binario = req.payload.foto._data;
+                    extension = req.payload.foto.hapi.filename.split('.')[1];
+
+                    await module.exports.utilSubirFichero(
+                        binario, idAnuncio, extension);
+
+                    return respuesta;
+                }
+            },
+            {
+                method: 'GET',
+                path: '/api/anuncio/{id}',
+                handler: async (req, h) => {
+                    var criterio = { "_id" : require("mongodb").ObjectID(req.params.id) };
+                    var anunciosObtenidos;
+                    await repositorio.conexion()
+                        .then((db) => repositorio.obtenerAnuncios(db, criterio))
+                        .then((anuncios) => {
+                            anunciosObtenidos = anuncios;
+                        });
+
+                    return anunciosObtenidos;
+                }
+            },
+            {
+                method: 'GET',
+                path: '/api/anuncios',
+                handler: async (req, h) => {
+                    var anunciosObtenidos;
+                    await repositorio.conexion()
+                        .then((db) => repositorio.obtenerAnuncios(db, {}))
+                        .then((anuncios) => {
+                            anunciosObtenidos = anuncios;
+                        })
+
+                    return anunciosObtenidos;
+                }
+            },
+            {
                 method: 'GET',
                 path: '/anuncio/{id}/eliminar',
                 handler: async (req, h) => {
@@ -326,35 +391,6 @@ module.exports = {
                             usuario: 'jordán',
                             anuncios: anunciosEjemplo
                         }, { layout: 'base'} );
-                }
-            },
-            {
-                method: 'GET',
-                path: '/api/anuncio/{id}',
-                handler: async (req, h) => {
-                    var criterio = { "_id" : require("mongodb").ObjectID(req.params.id) };
-                    var anunciosObtenidos;
-                    await repositorio.conexion()
-                        .then((db) => repositorio.obtenerAnuncios(db, criterio))
-                        .then((anuncios) => {
-                            anunciosObtenidos = anuncios;
-                        });
-
-                    return anunciosObtenidos;
-                }
-            },
-            {
-                method: 'GET',
-                path: '/api/anuncios',
-                handler: async (req, h) => {
-                    var anunciosObtenidos;
-                    await repositorio.conexion()
-                        .then((db) => repositorio.obtenerAnuncios(db, {}))
-                        .then((anuncios) => {
-                            anunciosObtenidos = anuncios;
-                        })
-
-                    return anunciosObtenidos;
                 }
             },
             {
