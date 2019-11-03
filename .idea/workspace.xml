@@ -80,7 +80,7 @@
       <workItem from="1572714389455" duration="1539000" />
       <workItem from="1572720373468" duration="6415000" />
       <workItem from="1572728695786" duration="3824000" />
-      <workItem from="1572738622000" duration="920000" />
+      <workItem from="1572738622000" duration="1688000" />
     </task>
     <task id="LOCAL-00001" summary="Clase 2.">
       <created>1571836903896</created>
@@ -215,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572739355002</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Removing log.">
+      <created>1572739567625</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1572739567625</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +261,7 @@
     <MESSAGE value="Trying again..." />
     <MESSAGE value="Trying with base64." />
     <MESSAGE value="Changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes." />
+    <MESSAGE value="Removing log." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing log." />
   </component>
 </project>
