@@ -80,7 +80,7 @@
       <workItem from="1572714389455" duration="1539000" />
       <workItem from="1572720373468" duration="6415000" />
       <workItem from="1572728695786" duration="3824000" />
-      <workItem from="1572738622000" duration="710000" />
+      <workItem from="1572738622000" duration="920000" />
     </task>
     <task id="LOCAL-00001" summary="Clase 2.">
       <created>1571836903896</created>
@@ -208,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572738857884</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Changes.">
+      <created>1572739355002</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1572739355002</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,17 +253,7 @@
     <MESSAGE value="Change the port." />
     <MESSAGE value="Trying again..." />
     <MESSAGE value="Trying with base64." />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying with base64." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes.js</url>
-          <line>49</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes." />
   </component>
 </project>
