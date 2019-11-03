@@ -18,11 +18,6 @@ module.exports = {
             {
                 method: 'POST',
                 path: '/api/publicar',
-                options : {
-                    payload: {
-                        output: 'stream'
-                    }
-                },
                 handler: async (req, h) => {
                     anuncio = {
                         usuario : "api" ,
@@ -47,7 +42,7 @@ module.exports = {
                             }
                         })
 
-                    //console.log(req.payload);
+                    console.log(req.payload.foto);
 
                     binario = req.payload.foto.replace(/^data:image\/png;base64,/, "");
                     //extension = req.payload.foto.hapi.filename.split('.')[1];
